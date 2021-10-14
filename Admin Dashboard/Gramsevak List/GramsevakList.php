@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include "db.php";
+include "../../db.php";
 
 $trp = mysqli_query($conn, "SELECT * from tbl_Gramsevak");
 $rows = array();
