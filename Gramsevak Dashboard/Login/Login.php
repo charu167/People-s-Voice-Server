@@ -15,7 +15,7 @@ if (isset($_POST['name']) && isset($_POST['password'])) {
         $row = mysqli_fetch_assoc($result);
 
         if ($row['name'] === $name && $row['password'] === $password) {
-
+            
             echo json_encode($row);
         } else {
             echo 1234;
