@@ -25,5 +25,3 @@ if ($res) {
     $data = array('data');
     echo json_encode($data);
 }
-
-

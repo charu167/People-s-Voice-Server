@@ -6,7 +6,7 @@ $k = getallheaders();
 $region = $k['region'];
 
 $sql = "SELECT 
-        c.u_name, c.u_address, c.u_phone, c.forAdmin, c.c_region, DATE_FORMAT(c.c_date, '%M %d %Y') as date , g.name as g 
+        c.u_name, c.u_address, c.u_phone, c.forGS, c.c_region, DATE_FORMAT(c.c_date, '%M %d %Y') as date , g.name as g 
         from tbl_complaint c 
         INNER JOIN 
         tbl_gramsevak g
