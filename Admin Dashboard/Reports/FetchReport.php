@@ -10,6 +10,7 @@ $sql = "SELECT
         ON c.c_region = g.region WHERE c.forAdmin != '0' ";
 
 
+
 $result = mysqli_query($conn, $sql);
 
 $rows = array();
