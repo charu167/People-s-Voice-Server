@@ -18,10 +18,10 @@ if (isset($_POST['name']) && isset($_POST['password'])) {
             
             echo json_encode($row);
         } else {
-            echo 1234;
+            echo 0;
         }
     } else {
-        echo $password ;
+        echo 0 ;
     }
 } else {
     echo -1;
